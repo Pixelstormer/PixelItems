@@ -45,7 +45,8 @@ namespace PixelItems.Items.Armour.Jouster
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient (ItemID.GladiatorHelmet);
-			recipe.AddTile (TileID.WorkBenches);
+			recipe.AddIngredient (ItemID.FossilOre, 20);
+			recipe.AddTile (TileID.Anvils);
 			recipe.SetResult (this);
 			recipe.AddRecipe ();
 		}
