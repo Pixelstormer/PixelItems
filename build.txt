@@ -1,0 +1,3 @@
+displayName = Pixel's Assorted Interactables
+author = Pixelstorm
+version = 0.1
