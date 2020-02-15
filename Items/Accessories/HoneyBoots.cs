@@ -28,10 +28,10 @@ namespace PixelItems.Items.Accessories
 
 		public override void AddRecipes ()
 		{
-			ModRecipe recipe = new ModRecipe(mod);
+			ModRecipe recipe = new ModRecipe (mod);
+			recipe.AddIngredient (ItemID.IceSkates);
 			recipe.AddIngredient (ItemID.WaterWalkingBoots);
-			recipe.AddIngredient (ItemID.HoneyBlock, 8);
-			recipe.AddTile (TileID.HoneyDispenser);
+			recipe.AddTile (TileID.TinkerersWorkbench);
 			recipe.SetResult (this);
 			recipe.AddRecipe ();
 		}
