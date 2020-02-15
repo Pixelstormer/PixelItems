@@ -65,7 +65,7 @@ namespace PixelItems.Items.Accessories
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient (ItemID.LifePreserver);
-			recipe.AddIngredient (ItemID.ShinyRedBalloon);
+			recipe.AddRecipeGroup (PixelItems.RecipeGroupName.BasicBalloons.fullName ());
 			recipe.AddTile (TileID.TinkerersWorkbench);
 			recipe.SetResult (this);
 			recipe.AddRecipe ();
