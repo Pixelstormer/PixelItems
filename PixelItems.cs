@@ -8,6 +8,8 @@ namespace PixelItems
 {
 	public class PixelItems : Mod
 	{
+		private const string LANGUAGEKEY_ANY = "LegacyMisc.37";
+
 		public PixelItems()
 		{
 
@@ -15,19 +17,29 @@ namespace PixelItems
 
 		public override void AddRecipeGroups ()
 		{
-			RecipeGroup lunarWingGroup = new RecipeGroup (() => Language.GetTextValue("LegacyMisc.37") + " Lunar Wings", new int []
+			RecipeGroup lunarWingGroup = new RecipeGroup (() => Language.GetTextValue (LANGUAGEKEY_ANY) + " Lunar Wings", new int []
 			{
 				ItemID.WingsSolar,
 				ItemID.WingsVortex,
 				ItemID.WingsNebula,
 				ItemID.WingsStardust
 			});
+
 			RecipeGroup.RegisterGroup (RecipeGroupName.LunarWings.fullName (), lunarWingGroup);
+
+			RecipeGroup basicBalloonGroup = new RecipeGroup (() => Language.GetTextValue (LANGUAGEKEY_ANY) + " Basic Balloon", new int []
+			{
+				ItemID.ShinyRedBalloon,
+				ItemID.BalloonPufferfish
+			});
+
+			RecipeGroup.RegisterGroup (RecipeGroupName.BasicBalloons.fullName (), basicBalloonGroup);
 		}
 
 		public enum RecipeGroupName
 		{
-			LunarWings
+			LunarWings,
+			BasicBalloons
 		}
 	}
 }
