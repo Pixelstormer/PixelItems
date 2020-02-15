@@ -55,12 +55,11 @@ namespace PixelItems.Items.Accessories
 
 		public override void AddRecipes ()
 		{
-			ModRecipe recipe = new ModRecipe(mod);
+			ModRecipe recipe = new ModRecipe (mod);
 			recipe.AddIngredient (ItemID.IceSkates);
 			recipe.AddIngredient (ItemID.ShoeSpikes);
-			recipe.AddIngredient (ItemID.IceBlock, 8);
-			recipe.AddIngredient (ItemID.PinkSlimeBlock, 8);
-			recipe.AddTile (TileID.Solidifier);
+			recipe.AddIngredient (ItemID.HoneyBucket, 2);
+			recipe.AddTile (TileID.TinkerersWorkbench);
 			recipe.SetResult (this);
 			recipe.AddRecipe ();
 		}

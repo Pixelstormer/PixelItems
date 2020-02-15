@@ -63,7 +63,7 @@ namespace PixelItems.Items.Accessories
 
 		public override void AddRecipes ()
 		{
-			ModRecipe recipe = new ModRecipe(mod);
+			ModRecipe recipe = new ModRecipe (mod);
 			recipe.AddIngredient (ItemID.LifePreserver);
 			recipe.AddRecipeGroup (PixelItems.RecipeGroupName.BasicBalloons.fullName ());
 			recipe.AddTile (TileID.TinkerersWorkbench);
