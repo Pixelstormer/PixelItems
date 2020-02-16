@@ -35,8 +35,7 @@ namespace PixelItems.Items.Accessories
 
 		public override void SetStaticDefaults ()
 		{
-			Tooltip.SetDefault ("Ice is no longer slippery." +
-								"\nIce will not break when you fall on it." +
+			Tooltip.SetDefault ("Ice is no longer slippery, and will not break when you fall on it." +
 								"\nPink Slime is no longer bouncy.");
 		}
 
