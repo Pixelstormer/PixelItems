@@ -20,8 +20,8 @@ namespace PixelItems.Items.Accessories
 		{
 			item.width = 22;
 			item.height = 20;
-			item.value = 10000;
-			item.rare = 2;
+			item.value = Item.sellPrice (0, 15, 0, 0);
+			item.rare = ItemRarityID.Red;
 			item.accessory = true;
 		}
 
