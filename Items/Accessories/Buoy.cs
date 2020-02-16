@@ -49,7 +49,7 @@ namespace PixelItems.Items.Accessories
 		public override void SetStaticDefaults ()
 		{
 			DisplayName.SetDefault ("Float Ring");
-			Tooltip.SetDefault ("This highly buoyant ring lets you float in liquids.");
+			Tooltip.SetDefault ("Allows the holder to float in liquids.");
 		}
 
 		public override void SetDefaults ()
