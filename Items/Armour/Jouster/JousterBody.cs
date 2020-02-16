@@ -9,9 +9,7 @@ namespace PixelItems.Items.Armour.Jouster
 	{
 		public override void SetStaticDefaults ()
 		{
-			Tooltip.SetDefault ("Jouster breastplate." +
-								"\nIncreased movement speed." +
-								"\nSet bonus: Grants extra bonuses while mounted.");
+			Tooltip.SetDefault ("+4% Increased Movement Speed");
 		}
 
 		public override void SetDefaults ()
@@ -20,7 +18,7 @@ namespace PixelItems.Items.Armour.Jouster
 			item.height = 18;
 			item.value = 10000;
 			item.rare = 2;
-			item.defense = 30;
+			item.defense = 5;
 		}
 
 		public override bool IsArmorSet (Item head, Item body, Item legs)
@@ -31,19 +29,27 @@ namespace PixelItems.Items.Armour.Jouster
 		public override void UpdateArmorSet (Player player)
 		{
 			if (player.mount.Active)
-				player.statDefense += 125;
+			{
+				player.endurance += 0.06f;
+				player.allDamage += 0.18f;
 
-			player.setBonus = "+125 defence while mounted.";
+				player.magicCrit += 10;
+				player.meleeCrit += 10;
+				player.rangedCrit += 10;
+				player.thrownCrit += 10;
+			}
+			
+			player.setBonus = "While mounted, gain +6% damage reduction, +18% damage and +10% critical strike chance.";
 		}
 
 		public override void UpdateEquip (Player player)
 		{
-			player.moveSpeed += 0.5f;
+			player.moveSpeed += 0.04f;
 		}
 
 		public override void AddRecipes ()
 		{
-			ModRecipe recipe = new ModRecipe(mod);
+			ModRecipe recipe = new ModRecipe (mod);
 			recipe.AddIngredient (ItemID.GladiatorBreastplate);
 			recipe.AddIngredient (ItemID.FossilOre, 30);
 			recipe.AddTile (TileID.Anvils);

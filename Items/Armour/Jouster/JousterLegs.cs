@@ -9,9 +9,7 @@ namespace PixelItems.Items.Armour.Jouster
 	{
 		public override void SetStaticDefaults ()
 		{
-			Tooltip.SetDefault ("Jouster leg armour." +
-								"\nIncreased movement speed." +
-								"\nSet bonus: Grants extra bonuses while mounted.");
+			Tooltip.SetDefault ("+4% Increased Movement Speed");
 		}
 
 		public override void SetDefaults ()
@@ -20,30 +18,17 @@ namespace PixelItems.Items.Armour.Jouster
 			item.height = 18;
 			item.value = 10000;
 			item.rare = 2;
-			item.defense = 45;
-		}
-
-		public override bool IsArmorSet (Item head, Item body, Item legs)
-		{
-			return head.type == ModContent.ItemType<JousterHelmet> () && body.type == ModContent.ItemType<JousterBody> ();
-		}
-
-		public override void UpdateArmorSet (Player player)
-		{
-			if (player.mount.Active)
-				player.statDefense += 100;
-
-			player.setBonus = "+100 defence while mounted.";
+			item.defense = 5;
 		}
 
 		public override void UpdateEquip (Player player)
 		{
-			player.moveSpeed += 0.5f;
+			player.moveSpeed += 0.04f;
 		}
 
 		public override void AddRecipes ()
 		{
-			ModRecipe recipe = new ModRecipe(mod);
+			ModRecipe recipe = new ModRecipe (mod);
 			recipe.AddIngredient (ItemID.GladiatorLeggings);
 			recipe.AddIngredient (ItemID.FossilOre, 25);
 			recipe.AddTile (TileID.Anvils);
