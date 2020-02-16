@@ -1,6 +1,6 @@
 displayName = Pixel's Assorted Interactables
 author = Pixelstorm
-version = 0.8.9
+version = 0.8.10
 includePDB = false
 includeSource = true
 hideCode = false
