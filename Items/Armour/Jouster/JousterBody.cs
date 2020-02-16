@@ -40,9 +40,9 @@ namespace PixelItems.Items.Armour.Jouster
 			}
 			
 			player.setBonus = "While mounted, gain the following bonuses:" +
-							  "\n	Reduces damage taken by 6%" +
-							  "\n	18% increased damage" +
-							  "\n	10% increased critical strike chance";
+							  "\n           Reduces damage taken by 6%" +
+							  "\n           18% increased damage" +
+							  "\n           10% increased critical strike chance";
 		}
 
 		public override void UpdateEquip (Player player)
