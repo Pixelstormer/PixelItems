@@ -20,10 +20,9 @@ namespace PixelItems.Items.Tools
 			item.autoReuse = true;
 			item.useTime = 20;
 			item.useAnimation = 20;
-			// item.useTime = 45;
-			// item.useAnimation = 45;
-			// item.value = 200000;
-			// item.rare = 10;
+			item.value = Item.sellPrice (0, 15, 0, 0);
+			item.rare = ItemRarityID.Red;
+
 			//item.buffType = BuffID.Slow;
 			//item.buffTime = 30;
 		}
