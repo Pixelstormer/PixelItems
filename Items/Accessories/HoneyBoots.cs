@@ -9,7 +9,7 @@ namespace PixelItems.Items.Accessories
 	{
 		public override void SetStaticDefaults ()
 		{
-			Tooltip.SetDefault ("These boots let you walk on honey without being slowed down.");
+			Tooltip.SetDefault ("Honey is no longer sticky to walk on.");
 		}
 
 		public override void SetDefaults ()
