@@ -40,7 +40,7 @@ namespace PixelItems.Items.Armour.Jouster
 			}
 			
 			player.setBonus = "While mounted, gain the following bonuses:" +
-							  "\nReduces damage taken by 6%" +
+							  "\n6% reduced damage" +
 							  "\n18% increased damage" +
 							  "\n10% increased critical strike chance";
 		}
