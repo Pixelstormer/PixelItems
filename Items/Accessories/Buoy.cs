@@ -54,10 +54,10 @@ namespace PixelItems.Items.Accessories
 
 		public override void SetDefaults ()
 		{
-			item.width = 22;
-			item.height = 20;
-			item.value = 10000;
-			item.rare = 2;
+			item.width = 30;
+			item.height = 30;
+			item.value = Item.sellPrice (0, 1, 20, 0);
+			item.rare = ItemRarityID.Green;
 			item.accessory = true;
 		}
 
