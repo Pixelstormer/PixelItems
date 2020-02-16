@@ -9,7 +9,7 @@ namespace PixelItems.Items.Armour.Jouster
 	{
 		public override void SetStaticDefaults ()
 		{
-			Tooltip.SetDefault ("+4% Increased Movement Speed");
+			Tooltip.SetDefault ("+4% increased movement speed");
 		}
 
 		public override void SetDefaults ()
@@ -39,7 +39,10 @@ namespace PixelItems.Items.Armour.Jouster
 				player.thrownCrit += 10;
 			}
 			
-			player.setBonus = "While mounted, gain +6% damage reduction, +18% damage and +10% critical strike chance.";
+			player.setBonus = "While mounted, gain the following bonuses:" +
+							  "\n	Reduces damage taken by 6%" +
+							  "\n	18% increased damage" +
+							  "\n	10% increased critical strike chance";
 		}
 
 		public override void UpdateEquip (Player player)

@@ -9,7 +9,7 @@ namespace PixelItems.Items.Armour.Jouster
 	{
 		public override void SetStaticDefaults ()
 		{
-			Tooltip.SetDefault ("+4% Increased Movement Speed");
+			Tooltip.SetDefault ("+4% increased movement speed");
 		}
 
 		public override void SetDefaults ()
