@@ -33,9 +33,8 @@ namespace PixelItems.Items.Tools
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient (ItemID.RodofDiscord);
 			recipe.AddIngredient (ItemID.FragmentNebula, 18);
-			//recipe.AddIngredient(ItemID.LunarBar, 16);
-			recipe.AddIngredient (ItemID.CrystalShard, 20);
-			recipe.AddIngredient (ItemID.SoulofLight, 20);
+			recipe.AddIngredient (ItemID.LunarBar, 12);
+			recipe.AddIngredient (ItemID.SoulofNight, 20);
 			recipe.AddTile (TileID.LunarCraftingStation);
 			recipe.SetResult (this);
 			recipe.AddRecipe ();
