@@ -35,7 +35,9 @@ namespace PixelItems.Items.Accessories
 
 		public override void SetStaticDefaults ()
 		{
-			Tooltip.SetDefault ("These boots let you walk on ice without slipping, and on pink slime without bouncing.");
+			Tooltip.SetDefault ("Ice is no longer slippery." +
+								"\nIce will not break when you fall on it." +
+								"\nPink Slime is no longer bouncy.");
 		}
 
 		public override void SetDefaults ()
@@ -51,6 +53,7 @@ namespace PixelItems.Items.Accessories
 		{
 			player.slippy = false;
 			player.slippy2 = false;
+			player.iceSkate = true;
 		}
 
 		public override void AddRecipes ()
