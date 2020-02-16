@@ -61,7 +61,6 @@ namespace PixelItems.Items.Accessories
 			ModRecipe recipe = new ModRecipe (mod);
 			recipe.AddIngredient (ItemID.IceSkates);
 			recipe.AddIngredient (ItemID.ShoeSpikes);
-			recipe.AddIngredient (ItemID.HoneyBucket, 2);
 			recipe.AddTile (TileID.TinkerersWorkbench);
 			recipe.SetResult (this);
 			recipe.AddRecipe ();
