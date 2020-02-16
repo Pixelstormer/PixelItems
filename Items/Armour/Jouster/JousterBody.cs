@@ -16,7 +16,7 @@ namespace PixelItems.Items.Armour.Jouster
 		{
 			item.width = 18;
 			item.height = 18;
-			item.value = Item.sellPrice (0, 0, 82, 0);
+			item.value = Item.sellPrice (0, 0, 86, 0);
 			item.rare = ItemRarityID.Green;
 			item.defense = 5;
 		}
