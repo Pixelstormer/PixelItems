@@ -10,10 +10,7 @@ namespace PixelItems
 	{
 		private const string LANGUAGEKEY_ANY = "LegacyMisc.37";
 
-		public PixelItems()
-		{
-
-		}
+		public static int frameCount { get; private set; } = 0;
 
 		public override void AddRecipeGroups ()
 		{
@@ -34,6 +31,11 @@ namespace PixelItems
 			});
 
 			RecipeGroup.RegisterGroup (RecipeGroupName.BasicBalloons.fullName (), basicBalloonGroup);
+		}
+
+		public override void PostUpdateEverything ()
+		{
+			++frameCount;
 		}
 
 		public enum RecipeGroupName
