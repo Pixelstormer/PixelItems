@@ -12,8 +12,7 @@ namespace PixelItems.Items.Accessories
 		public override void SetStaticDefaults ()
 		{
 			DisplayName.SetDefault ("Mirror Shield");
-			Tooltip.SetDefault ("Allows the holder to reflect projectiles." +
-								"\nHas a two second cooldown.");
+			Tooltip.SetDefault ("Allows the holder to reflect some projectiles.");
 		}
 
 		public override void SetDefaults ()
