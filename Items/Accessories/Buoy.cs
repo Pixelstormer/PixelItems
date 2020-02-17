@@ -20,7 +20,6 @@ namespace PixelItems.Items.Accessories
 		private void PlayerUpdateHook (ILContext il)
 		{
 			ILCursor cursor = new ILCursor (il);
-
 			ILLabel noBuoyLabel = il.DefineLabel ();
 
 			if (!cursor.TryGotoNext (MoveType.After, i => i.MatchStfld<Player> (nameof (Player.maxFallSpeed)), i => i.MatchLdarg (0), i => i.MatchLdfld<Entity> (nameof (Entity.wet)), i => i.Match (OpCodes.Brfalse_S)))
