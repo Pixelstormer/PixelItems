@@ -20,10 +20,6 @@ namespace PixelItems.Items.Accessories
 		private void HookBounceCheck (ILContext il)
 		{
 			ILCursor cursor = new ILCursor (il);
-
-			if (!cursor.TryGotoNext (i => i.MatchLdarg (0)))
-				throw new InvalidOperationException ($"{nameof (PixelItems)} IL editing failed: {nameof (GripBoots.HookBounceCheck)} could not find entry point.");
-
 			ILLabel continueMethodLabel = il.DefineLabel ();
 
 			cursor.Emit (OpCodes.Ldarg_0);
